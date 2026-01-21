@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-card">
+        <h1>Colledge Admissions Calculator</h1>
+        
+        <div class="form-row">
+            <label for="age">age:</label>
+            <input type="number" id="age">
+        </div>
+
+        <p>Select from the below options:</p>
+        
+        <div class="radio-line">
+            <input type="radio" id="psychTrack" name="track" onclick="handleDisable()">
+            <label for="psychTrack">Psychometric and Bagrut</label>
+        </div>
+        
+        <div class="radio-line">
+            <input type="radio" id="mechinaTrack" name="track" onclick="handleDisable()">
+            <label for="mechinaTrack">Mechina and Bagrut</label>
+        </div>
+
+        <div class="form-row">
+            <label for="psychGrade">Psychometric Grade:</label>
+            <input type="number" id="psychGrade">
+        </div>
+
+        <div class="form-row">
+            <label for="bagrutGrade">Bagrut Grade:</label>
+            <input type="number" id="bagrutGrade">
+        </div>
+
+        <div class="form-row">
+            <label for="mechinaGrade">Mechina Grade:</label>
+            <input type="number" id="mechinaGrade">
+        </div>
+
+        <button onclick="validate()">validate</button>
+
+        <div id="statusMessage"></div>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
